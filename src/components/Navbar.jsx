@@ -11,7 +11,8 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
-import avatar from '../../public/images/avatar.jfif'
+import { motion, AnimatePresence } from "framer-motion";
+import avatar from "../../public/images/avatar.jfif";
 
 export default function Navbar() {
   const location = useLocation();
@@ -30,38 +31,30 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-md z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* 🔸 Logo Section */}
+        {/* 🔹 Logo Section */}
         <Link
           to="/"
           className="flex items-center text-xl font-bold text-amber-700"
           onClick={() => setIsOpen(false)}
         >
-
           <img
             src={avatar}
             alt="Muzammil Avatar"
             className="w-10 h-10 rounded-full shadow-md object-cover mr-2"
           />
           MMB.DEV
-
         </Link>
 
-
-
-        {/* 🔸 Hamburger Menu Button (Mobile Only) */}
+        {/* 🔹 Hamburger / Close Button */}
         <button
-          className="text-2xl text-amber-700 md:hidden"
+          className="text-2xl text-amber-700 md:hidden focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
 
-        {/* 🔸 Navigation Links */}
-        <ul
-          className={`flex flex-col md:flex-row items-center gap-6 md:gap-8 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent transition-all duration-300 ease-in-out ${
-            isOpen ? "block" : "hidden md:flex"
-          }`}
-        >
+        {/* 🔹 Desktop Menu */}
+        <ul className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <li key={link.path}>
               <Link
@@ -79,6 +72,49 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        {/* 🔹 Mobile Slide Menu */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.ul
+              key="mobile-menu"
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="fixed top-0 right-0 h-screen w-2/3 bg-white shadow-lg flex flex-col items-center justify-center gap-6 md:hidden z-40"
+            >
+              {/* ❌ Close button inside menu */}
+              <button
+                onClick={() => setIsOpen(false)}
+                className="absolute top-5 right-5 text-3xl text-amber-700"
+              >
+                <FaTimes />
+              </button>
+
+              {links.map((link) => (
+                <motion.li
+                  key={link.path}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Link
+                    to={link.path}
+                    onClick={() => setIsOpen(false)}
+                    className={`flex flex-col items-center text-lg font-medium transition-all duration-300 ${
+                      location.pathname === link.path
+                        ? "text-amber-700"
+                        : "text-gray-700 hover:text-amber-700"
+                    }`}
+                  >
+                    <span className="text-xl mb-1">{link.icon}</span>
+                    <span>{link.label}</span>
+                  </Link>
+                </motion.li>
+              ))}
+            </motion.ul>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );
