@@ -2,8 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Layout from "../components/Layout";
-import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaGithub, FaTiktok } from "react-icons/fa";
 import avatar from '../../public/images/avatar.jfif'
+
+
+
+const medias = [
+{ path: "https://www.linkedin.com/in/muhammad-muzammil-bashir-a55275262", icon: <FaLinkedin />},
+{ path: "https://github.com/MUHAMMADMUZAMMILBASHIR", icon: <FaGithub />},
+{ path: "https://www.instagram.com/tastewithms?igsh=cmh1a3dkNmxldXZl", icon: <FaInstagram />},
+{ path: "https://tiktok.com/@tastewithmaliksahb", icon: <FaTiktok />},
+// { path: "/", icon: <FaFacebook /> },
+];
 
 export default function HomePage() {
   return (
@@ -28,6 +38,7 @@ export default function HomePage() {
                 words={[
                   "Frontend Developer",
                   "Web Developer",
+                  "Version Control",
                   "Backend Integrator",
                   "UI/UX Designer",
                 ]}
@@ -44,18 +55,18 @@ export default function HomePage() {
 
           {/* Social Icons */}
           <div className="mt-8 flex justify-center md:justify-start gap-6 text-3xl text-gray-600">
-            {[FaFacebook, FaInstagram, FaLinkedin, FaGithub].map((Icon, i) => (
+            {medias.map((media, i) => (
               <motion.a
                 key={i}
                 whileHover={{ scale: 1.2, y: -5 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                href="#"
+                href={media.path}
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-amber-700 transition-transform"
               >
-                <Icon />
+                {media.icon}
               </motion.a>
             ))}
           </div>
