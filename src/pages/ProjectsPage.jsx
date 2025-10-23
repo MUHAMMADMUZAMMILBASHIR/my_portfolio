@@ -2,6 +2,14 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Code2 } from "lucide-react";
 import { motion } from "framer-motion";
+import ems from '../../public/images/ems.png';
+import mart from '../../public/images/mart.png';
+import discoverPak from '../../public/images/discoverPak.png';
+import hotel from '../../public/images/hotel.png';
+import blood from '../../public/images/blood.png';
+import gallery from '../../public/images/cloudnary.png';
+import denProject from '../../public/images/denProject.png';
+import portfolio from '../../public/images/portfolio.png';
 
 export default function ProjectsPage() {
   const projects = [
@@ -10,7 +18,7 @@ export default function ProjectsPage() {
       title: "Employee Management System",
       description:
         "Manages employee records, attendance, and HR approvals with secure authentication.",
-      image: "/public/images/ems.png",
+      image: ems,
       link: "https://yourprojectlink.com",
       technologies: [
         "React",
@@ -26,7 +34,7 @@ export default function ProjectsPage() {
       title: "HRS Mart (E-commerce Platform)",
       description:
         "Modern e-commerce website for browsing, searching, and purchasing products with cart and order management.",
-      image: "/public/images/hrsmart.png",
+      image: mart,
       link: "https://yourprojectlink.com",
       technologies: ["React.js", "TailwindCSS"],
     },
@@ -35,7 +43,7 @@ export default function ProjectsPage() {
       title: "Discover Pakistan Tour & Travel",
       description:
         "Responsive landing page showcasing tour packages with MVT structure using Django.",
-      image: "/public/images/discoverPak.png",
+      image: discoverPak.png,
       link: "https://yourprojectlink.com",
       technologies: ["Python", "Django", "TailwindCSS"],
     },
@@ -44,7 +52,7 @@ export default function ProjectsPage() {
       title: "MZ Hotel Booking System",
       description:
         "Hotel management web app with room booking, admin dashboard, and user authentication.",
-      image: "/public/images/hotel.png",
+      image: hotel,
       link: "https://yourprojectlink.com",
       technologies: ["HTML", "JavaScript", "TailwindCSS", "PHP", "MySQL"],
     },
@@ -53,7 +61,7 @@ export default function ProjectsPage() {
       title: "Blood Donation Platform",
       description:
         "Connects blood donors and recipients with real-time matching and donation tracking system.",
-      image: "/public/images/blood.png",
+      image: blood,
       link: "https://yourprojectlink.com",
       technologies: ["HTML", "JavaScript", "PHP", "MySQL", "Bootstrap"],
     },
@@ -62,7 +70,7 @@ export default function ProjectsPage() {
       title: "Cloudinary Photos Gallery",
       description:
         "Next.js + Cloudinary app for uploading, searching, creating albums, and AI-based image filters.",
-      image: "/public/images/cloudnary.png",
+      image: gallery,
       link: "https://yourprojectlink.com",
       technologies: [
         "Next.js",
@@ -77,7 +85,7 @@ export default function ProjectsPage() {
       title: "DEN Website Landing Page",
       description:
         "DEN Website site showcasing projects, education, and contact details with a modern UI.",
-      image: "/public/images/denProject.png",
+      image: denProject,
       link: "https://yourprojectlink.com",
       technologies: ["Next.js", "TailwindCSS", "Framer Motion", "React Icons"],
     },
@@ -86,7 +94,7 @@ export default function ProjectsPage() {
       title: "Next.Js Portfolio Website",
       description:
         "Personal portfolio site showcasing projects, education, and contact details with a modern UI.",
-      image: "/public/images/portfolio.png",
+      image: portfolio,
       link: "https://yourprojectlink.com",
       technologies: ["Next.js", "TailwindCSS", "Framer Motion", "React Icons"],
     },
