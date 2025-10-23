@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Layout from "../components/Layout";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import avatar from '../../public/images/avatar.jfif'
 
 export default function HomePage() {
   return (
@@ -68,7 +69,7 @@ export default function HomePage() {
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
           <motion.img
-            src="/public/images/avatar.jfif"
+            src={avatar}
             alt="Muzammil Avatar"
             className="w-60 h-60 rounded-full shadow-lg object-cover"
             whileHover={{ scale: 1.05, rotate: 2 }}
