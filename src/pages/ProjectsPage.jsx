@@ -35,7 +35,7 @@ export default function ProjectsPage() {
       title: "Discover Pakistan Tour & Travel",
       description:
         "Responsive landing page showcasing tour packages with MVT structure using Django.",
-      image: "/public/images/hotel.png",
+      image: "/public/images/discoverPak.png",
       link: "https://yourprojectlink.com",
       technologies: ["Python", "Django", "TailwindCSS"],
     },
@@ -62,7 +62,7 @@ export default function ProjectsPage() {
       title: "Cloudinary Photos Gallery",
       description:
         "Next.js + Cloudinary app for uploading, searching, creating albums, and AI-based image filters.",
-      image: "/public/images/gallery.png",
+      image: "/public/images/cloudnary.png",
       link: "https://yourprojectlink.com",
       technologies: [
         "Next.js",
@@ -74,7 +74,16 @@ export default function ProjectsPage() {
     },
     {
       id: 7,
-      title: "Portfolio Website",
+      title: "DEN Website Landing Page",
+      description:
+        "DEN Website site showcasing projects, education, and contact details with a modern UI.",
+      image: "/public/images/denProject.png",
+      link: "https://yourprojectlink.com",
+      technologies: ["Next.js", "TailwindCSS", "Framer Motion", "React Icons"],
+    },
+     {
+      id: 8,
+      title: "Next.Js Portfolio Website",
       description:
         "Personal portfolio site showcasing projects, education, and contact details with a modern UI.",
       image: "/public/images/portfolio.png",
