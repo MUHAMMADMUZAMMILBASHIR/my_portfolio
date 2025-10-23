@@ -5,8 +5,6 @@ import Layout from "../components/Layout";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub, FaTiktok } from "react-icons/fa";
 import avatar from '../../public/images/avatar.jfif'
 
-
-
 const medias = [
 { path: "https://www.linkedin.com/in/muhammad-muzammil-bashir-a55275262", icon: <FaLinkedin />},
 { path: "https://github.com/MUHAMMADMUZAMMILBASHIR", icon: <FaGithub />},
