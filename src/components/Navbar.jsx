@@ -37,7 +37,7 @@ export default function Navbar() {
         >
 
           <img
-            src="/src/assets/images/avatar.jfif"
+            src="/public/images/avatar.jfif"
             alt="Muzammil Avatar"
             className="w-10 h-10 rounded-full shadow-md object-cover mr-2"
           />

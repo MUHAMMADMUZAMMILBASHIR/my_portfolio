@@ -12,7 +12,7 @@ export default function AboutPage() {
     location: "Rawalpindi, Pakistan",
     email: "muzammilrawalpindi786@gmail.com",
     bio: "I’m a passionate web developer who loves creating clean, responsive, and functional web apps. With a strong foundation in frontend and continue Learning the backend technologies, I aim to build digital solutions that make a real impact.",
-    image: "/src/assets/images/avatar.jfif",
+    image: "/public/images/avatar.jfif",
   };
 
   const expertise = [

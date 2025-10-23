@@ -10,7 +10,7 @@ export default function ProjectsPage() {
       title: "Employee Management System",
       description:
         "Manages employee records, attendance, and HR approvals with secure authentication.",
-      image: "/assets/ems.png",
+      image: "/public/images/ems.png",
       link: "https://yourprojectlink.com",
       technologies: [
         "React",
@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       title: "HRS Mart (E-commerce Platform)",
       description:
         "Modern e-commerce website for browsing, searching, and purchasing products with cart and order management.",
-      image: "/assets/hrsmart.png",
+      image: "/public/images/hrsmart.png",
       link: "https://yourprojectlink.com",
       technologies: ["React.js", "TailwindCSS"],
     },
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
       title: "Discover Pakistan Tour & Travel",
       description:
         "Responsive landing page showcasing tour packages with MVT structure using Django.",
-      image: "/assets/hotel.png",
+      image: "/public/images/hotel.png",
       link: "https://yourprojectlink.com",
       technologies: ["Python", "Django", "TailwindCSS"],
     },
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
       title: "MZ Hotel Booking System",
       description:
         "Hotel management web app with room booking, admin dashboard, and user authentication.",
-      image: "/assets/hotel.png",
+      image: "/public/images/hotel.png",
       link: "https://yourprojectlink.com",
       technologies: ["HTML", "JavaScript", "TailwindCSS", "PHP", "MySQL"],
     },
@@ -53,7 +53,7 @@ export default function ProjectsPage() {
       title: "Blood Donation Platform",
       description:
         "Connects blood donors and recipients with real-time matching and donation tracking system.",
-      image: "/assets/blood.png",
+      image: "/public/images/blood.png",
       link: "https://yourprojectlink.com",
       technologies: ["HTML", "JavaScript", "PHP", "MySQL", "Bootstrap"],
     },
@@ -62,7 +62,7 @@ export default function ProjectsPage() {
       title: "Cloudinary Photos Gallery",
       description:
         "Next.js + Cloudinary app for uploading, searching, creating albums, and AI-based image filters.",
-      image: "/assets/gallery.png",
+      image: "/public/images/gallery.png",
       link: "https://yourprojectlink.com",
       technologies: [
         "Next.js",
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
       title: "Portfolio Website",
       description:
         "Personal portfolio site showcasing projects, education, and contact details with a modern UI.",
-      image: "/assets/portfolio.png",
+      image: "/public/images/portfolio.png",
       link: "https://yourprojectlink.com",
       technologies: ["Next.js", "TailwindCSS", "Framer Motion", "React Icons"],
     },

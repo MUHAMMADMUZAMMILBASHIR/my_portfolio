@@ -68,7 +68,7 @@ export default function HomePage() {
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
           <motion.img
-            src="/src/assets/images/avatar.jfif"
+            src="/public/images/avatar.jfif"
             alt="Muzammil Avatar"
             className="w-60 h-60 rounded-full shadow-lg object-cover"
             whileHover={{ scale: 1.05, rotate: 2 }}

@@ -12,7 +12,7 @@ export default function ExperiencePage() {
       location:
         "Oric Pak Korea Building, Arid Agriculture University Rawalpindi, Pakistan",
       type: "On-site",
-      image: "/src/assets/images/dev.png",
+      image: "/public/images/dev.png",
       startDate: "07/Sep/2025",
       endDate: "07/Dec/2025",
       duration: "3 Months (Ongoing)",
@@ -25,7 +25,7 @@ export default function ExperiencePage() {
       department: "IT Department",
       location: "Remote",
       type: "Remote",
-      image: "/src/assets/images/den.jfif",
+      image: "/public/images/den.jfif",
       startDate: "4/June/2024",
       endDate: "4/Sep/2024",
       duration: "3 Months",
