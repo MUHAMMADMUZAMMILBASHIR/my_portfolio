@@ -1,6 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
+import devRolin from '../../public/images/dev.png';
+import den from '../../public/images/den.jfif';
 
 export default function ExperiencePage() {
   const experiences = [
@@ -12,7 +14,7 @@ export default function ExperiencePage() {
       location:
         "Oric Pak Korea Building, Arid Agriculture University Rawalpindi, Pakistan",
       type: "On-site",
-      image: "/public/images/dev.png",
+      image: devRolin,
       startDate: "07/Sep/2025",
       endDate: "07/Dec/2025",
       duration: "3 Months (Ongoing)",
@@ -25,7 +27,7 @@ export default function ExperiencePage() {
       department: "IT Department",
       location: "Remote",
       type: "Remote",
-      image: "/public/images/den.jfif",
+      image: den,
       startDate: "4/June/2024",
       endDate: "4/Sep/2024",
       duration: "3 Months",

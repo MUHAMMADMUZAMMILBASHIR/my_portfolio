@@ -1,6 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { GraduationCap } from "lucide-react";
+import iiui from '../../public/images/iiui.jfif';
+import school from '../../public/images/school.jfif';
+import college from '../../public/images/collage.jpg'
 
 export default function EducationPage() {
   const education = [
@@ -8,7 +11,7 @@ export default function EducationPage() {
       id: 1,
       degree: "Bachelor of Science in Software Engineering (BSSE)",
       university: "(IIUI) International Islamic University, Islamabad",
-      image: "/public/images/iiui.jfif",
+      image: iiui,
       semester: "7th",
       duration: "4 Years",
       start_end_date: "2022 - 2026",
@@ -20,7 +23,7 @@ export default function EducationPage() {
       id: 2,
       degree: "Intermediate in Computer Science (ICS)",
       university: "F.G. Sir Syed College, The Mall, Rawalpindi",
-      image: "/public/images/collage.jpg",
+      image: college,
       semester: "Completed",
       duration: "2 Years",
       start_end_date: "2019 - 2021",
@@ -32,7 +35,7 @@ export default function EducationPage() {
       id: 3,
       degree: "Matriculation in Science",
       university: "F.G. Public School No.2, Tariqabad, Rawalpindi",
-      image: "/public/images/school.jfif",
+      image: school,
       semester: "Completed",
       duration: "2 Years",
       start_end_date: "2017 - 2019",
