@@ -1,6 +1,24 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
+import html from '../../public/images/html.png';
+import css from '../../public/images/css.png';
+import js from '../../public/images/js.png';
+import react from '../../public/images/react.png'
+import next from '../../public/images/next.png';
+import tailwindcss from '../../public/images/tailwind.png';
+import boostrap from '../../public/images/btrp.jfif';
+import ui from '../../public/images/ui.png';
+import schadcn from '../../public/images/cn.png';
+import php from '../../public/images/php.png';
+import sql from '../../public/images/sql.png';
+import django from '../../public/images/django.jfif';
+import node from '../../public/images/node.png';
+import vs from '../../public/images/vs.png';
+import sublime from '../../public/images/sublime.jfif';
+import pycharm from '../../public/images/pycharm.png';
+import jupyter from '../../public/images/jupyter.png';
+
 
 export default function SkillsPage() {
   const skills = [
@@ -8,11 +26,11 @@ export default function SkillsPage() {
       id: 1,
       title: "FrontEnd",
       images: [
-        "/public/images/html.png",
-        "/public/images/css.png",
-        "/public/images/js.png",
-        "/public/images/react.png",
-        "/public/images/next.png",
+        html,
+        css,
+        js,
+        react,
+        next,
       ],
       technologies: ["HTML", "CSS", "JavaScript", "React.js", "Next.js"],
     },
@@ -20,10 +38,10 @@ export default function SkillsPage() {
       id: 2,
       title: "UI Libraries",
       images: [
-        "/public/images/tailwind.png",
-        "/public/images/btrp.jfif",
-        "/public/images/ui.png",
-        "/public/images/cn.png",
+        tailwindcss,
+        boostrap,
+        ui,
+        schadcn,
       ],
       technologies: ["TailwindCSS", "Bootstrap", "Material UI", "ShadCN.UI"],
     },
@@ -31,10 +49,10 @@ export default function SkillsPage() {
       id: 3,
       title: "BackEnd",
       images: [
-        "/public/images/php.png",
-        "/public/images/sql.png",
-        "/public/images/django.jfif",
-        "/public/images/node.png",
+        php,
+        sql,
+        django,
+        node,
       ],
       technologies: ["PHP", "MySQL", "Django", "Node.js"],
     },
@@ -42,10 +60,10 @@ export default function SkillsPage() {
       id: 4,
       title: "Software Tools",
       images: [
-        "/public/images/vs.png",
-        "/public/images/sublime.jfif",
-        "/public/images/pycharm.png",
-        "/public/images/jupyter.png",
+        vs,
+        sublime,
+        pycharm,
+        jupyter,
       ],
       technologies: [
         "VS Code",
