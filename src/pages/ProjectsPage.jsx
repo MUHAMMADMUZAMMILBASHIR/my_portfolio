@@ -43,7 +43,7 @@ export default function ProjectsPage() {
       title: "Discover Pakistan Tour & Travel",
       description:
         "Responsive landing page showcasing tour packages with MVT structure using Django.",
-      image: discoverPak.png,
+      image: discoverPak,
       link: "https://yourprojectlink.com",
       technologies: ["Python", "Django", "TailwindCSS"],
     },
