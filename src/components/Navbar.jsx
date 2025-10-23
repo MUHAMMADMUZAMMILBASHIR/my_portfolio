@@ -11,6 +11,7 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
+import avatar from '../../public/images/avatar.jfif'
 
 export default function Navbar() {
   const location = useLocation();
@@ -37,7 +38,7 @@ export default function Navbar() {
         >
 
           <img
-            src="/public/images/avatar.jfif"
+            src={avatar}
             alt="Muzammil Avatar"
             className="w-10 h-10 rounded-full shadow-md object-cover mr-2"
           />
