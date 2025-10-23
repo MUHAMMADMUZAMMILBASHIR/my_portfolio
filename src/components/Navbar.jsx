@@ -35,12 +35,14 @@ export default function Navbar() {
           className="flex items-center text-xl font-bold text-amber-700"
           onClick={() => setIsOpen(false)}
         >
+
           <img
             src="/src/assets/images/avatar.jfif"
             alt="Muzammil Avatar"
             className="w-10 h-10 rounded-full shadow-md object-cover mr-2"
           />
           MMB.DEV
+          
         </Link>
 
         {/* 🔸 Hamburger Menu Button (Mobile Only) */}
