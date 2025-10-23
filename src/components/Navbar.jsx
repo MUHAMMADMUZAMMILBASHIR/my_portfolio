@@ -42,8 +42,10 @@ export default function Navbar() {
             className="w-10 h-10 rounded-full shadow-md object-cover mr-2"
           />
           MMB.DEV
-          
+
         </Link>
+
+
 
         {/* 🔸 Hamburger Menu Button (Mobile Only) */}
         <button
